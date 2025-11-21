@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Diseño computacional de proteínas · Versión avanzada</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Versión avanzada del pipeline de diseño computacional de proteínas: de secuencia a impresión 3D, más IA generativa, diseño inclusivo y laboratorio de proyectos con exportación a CSV." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/png" href="assets/img/favicon-192.png" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#020617" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="app-header app-shell">
+    <div class="brand">
+      <div class="brand-logo" aria-hidden="true">
+        <span>🧬</span>
+      </div>
+      <div class="brand-text">
+        <h1>Diseño computacional de proteínas · <strong>del modelo atómico al aula inclusiva</strong></h1>
+        <p>Versión avanzada: IA generativa, XR y laboratorio de proyectos con exportación a CSV.</p>
+      </div>
+    </div>
+
+    <div class="inclusive-controls" aria-label="Controles inclusivos">
+      <button class="ic-btn" onclick="location.href='index.html'">
+        <span>🏠</span> Inicio
+      </button>
+      <button class="ic-btn" data-ic="narrator">
+        <span>🗣️</span> Narrar
+      </button>
+      <button class="ic-btn" data-ic="theme">
+        <span>🌓</span> Tema
+      </button>
+      <button class="ic-btn" data-ic="font-plus">
+        <span>A+</span>
+      </button>
+      <button class="ic-btn" data-ic="font-minus">
+        <span>A−</span>
+      </button>
+      <button class="ic-btn" data-ic="contrast">
+        <span>🔳</span> Alto contraste
+      </button>
+      <button class="ic-btn" data-ic="language">
+        <span>🌐</span> Idioma
+      </button>
+      <button class="ic-btn" onclick="document.getElementById('search-global').focus()">
+        <span>🔍</span> Buscar
+      </button>
+    </div>
+  </header>
+
+  <main class="app-shell">
+    <section class="hero">
+      <div class="hero-main">
+        <div class="hero-tag">
+          <span class="hero-tag-dot"></span>
+          <span>🧬 Secuencia → estructura → malla → STL → XR → aula</span>
+        </div>
+
+        <div class="hero-title">
+          <h2>
+            No solo imprimir proteínas:
+            <span>diseñar experiencias de aprendizaje basadas en IA y modelos 3D</span>
+          </h2>
+        </div>
+
+        <p class="hero-subtitle">
+          Este sitio profundiza el pipeline clásico (AlphaFold · Modeller · PyMOL · Blender · impresión 3D)
+          y lo conecta con <strong>IA generativa</strong>, visualización inmersiva XR y un
+          <strong>laboratorio de proyectos</strong> que genera reportes en CSV para planificación y evidencia.
+        </p>
+
+        <div class="hero-grid">
+          <article class="hero-card">
+            <div class="hero-card-header">
+              <div class="hero-card-icon">🤖</div>
+              <h3 class="hero-card-title">IA para explorar variantes y mutaciones</h3>
+            </div>
+            <p class="hero-card-body">
+              Conceptualiza el uso de modelos de diseño inverso (inverse folding) y difusión
+              para imaginar nuevas secuencias y comparar sus estructuras. Ideal para discutir
+              ética, bioseguridad y aplicaciones en salud.
+            </p>
+            <div class="hero-badges">
+              <span class="hero-badge">Inverse folding</span>
+              <span class="hero-badge">Diffusion models</span>
+              <span class="hero-badge">Protein engineering</span>
+            </div>
+          </article>
+
+          <article class="hero-card">
+            <div class="hero-card-header">
+              <div class="hero-card-icon">🧪</div>
+              <h3 class="hero-card-title">Diseño inclusivo &amp; evidencia</h3>
+            </div>
+            <p class="hero-card-body">
+              Cada modelo físico se convierte en un recurso accesible con ficha táctil,
+              rúbrica y guía para estudiantes del PIE. El laboratorio de proyectos genera
+              automáticamente un CSV con el estado de cada proteína.
+            </p>
+            <div class="hero-badges">
+              <span class="hero-badge">PIE friendly</span>
+              <span class="hero-badge">Táctil</span>
+              <span class="hero-badge">Evidencias CSV</span>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <aside class="hero-side">
+        <div class="hero-side-header">
+          <span class="hero-chip">🔬 Media · Universidad temprana</span>
+          <span class="hero-chip">⏱️ 6–10 sesiones</span>
+        </div>
+        <h3 class="hero-side-title">Ruta avanzada: del FASTA a la experiencia XR</h3>
+        <div class="hero-pipeline">
+          <p><strong>Pipeline extendido</strong></p>
+          <div class="pipeline-steps">
+            <div class="pipeline-step">
+              <span class="pipeline-dot"></span>
+              <span><strong>1. Secuencia &amp; variaciones</strong> · seleccionar proteína y diseñar mutaciones razonadas.</span>
+            </div>
+            <div class="pipeline-step">
+              <span class="pipeline-dot"></span>
+              <span><strong>2. Modelado</strong> · AlphaFold / Modeller + discusión de confiabilidad y dominios.</span>
+            </div>
+            <div class="pipeline-step">
+              <span class="pipeline-dot"></span>
+              <span><strong>3. IA generativa (conceptual)</strong> · explorar cómo modelos modernos proponen nuevas secuencias.</span>
+            </div>
+            <div class="pipeline-step">
+              <span class="pipeline-dot"></span>
+              <span><strong>4. Malla y STL</strong> · limpieza en Blender, escala y base accesible con Braille o relieve.</span>
+            </div>
+            <div class="pipeline-step">
+              <span class="pipeline-dot"></span>
+              <span><strong>5. XR</strong> · conectar con viewer 3D/AR/VR y comparar modelo físico vs virtual.</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <button class="btn btn-primary" onclick="location.href='viewer3D/proteina.html'">
+              🧬 Ver demo 3D
+            </button>
+            <button class="btn btn-ghost" onclick="location.href='lab-proyectos.html'">
+              ✅ Abrir Lab de proyectos
+            </button>
+          </div>
+        </div>
+
+        <div class="floating-vr-badge" aria-hidden="true">
+          🥽
+        </div>
+      </aside>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div class="section-title">
+          <h3>🧰 Herramientas clave + nuevas capas de análisis</h3>
+          <p>De la estructura estática a la conversación sobre cambio, función y diseño racional.</p>
+        </div>
+        <div>
+          <input id="search-global" type="search" placeholder="🔍 Buscar herramienta o concepto..."
+                 data-search=".cards-grid .card"
+                 style="padding:0.35rem 0.6rem;border-radius:999px;border:1px solid rgba(148,163,184,0.7);background:rgba(15,23,42,0.9);color:#e5e7eb;font-size:0.8rem;min-width:220px;">
+        </div>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card">
+          <span class="card-badge">Secuencia → PDB</span>
+          <h4 class="card-title">AlphaFold / ColabFold con mirada crítica</h4>
+          <p class="card-text">
+            Además de obtener el modelo 3D, esta versión invita a interpretar mapas de confianza (pLDDT),
+            regiones desordenadas y dominios móviles. El objetivo no es solo “tener la estructura” sino
+            <strong>preguntar qué tan fiable es y qué significa biológicamente</strong>.
+          </p>
+          <ul class="card-list">
+            <li>Comparar regiones de alta/baja confianza.</li>
+            <li>Relacionar flexibilidad con función (ej. bucles en sitios activos).</li>
+            <li>Proponer qué datos experimentales serían necesarios para validar el modelo.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="card-badge">Modelado comparativo</span>
+          <h4 class="card-title">Modeller + alineamientos inteligentes</h4>
+          <p class="card-text">
+            Los estudiantes analizan el alineamiento múltiple entre la proteína problema y sus plantillas,
+            identificando residuos conservados, mutaciones críticas y huecos. Esto refuerza el vínculo entre
+            <strong>evolución, estructura y función</strong>.
+          </p>
+          <ul class="card-list">
+            <li>Introducir el concepto de familia de proteínas y dominios conservados.</li>
+            <li>Discutir cuándo conviene usar modelado por homología vs AlphaFold.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="card-badge">Diseño generativo</span>
+          <h4 class="card-title">IA para proponer nuevas secuencias</h4>
+          <p class="card-text">
+            Sin necesidad de correr modelos complejos en clase, se trabaja a nivel de <em>storytelling científico</em>:
+            cómo redes neuronales modernas pueden sugerir secuencias que plegarían en estructuras con propiedades
+            deseadas (mayor estabilidad, nueva afinidad, etc.).
+          </p>
+          <ul class="card-list">
+            <li>Analizar ejemplos reales publicados en literatura científica.</li>
+            <li>Discutir riesgos, bioseguridad y límites éticos.</li>
+            <li>Conectar con conceptos de diseño racional de fármacos.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="card-badge">XR + PIE</span>
+          <h4 class="card-title">Material multisensorial</h4>
+          <p class="card-text">
+            Cada proteína puede existir en tres capas sincronizadas: pantalla (3D), XR (AR/VR) y objeto impreso.
+            Se sugiere documentar cómo cada capa apoya a distintos perfiles de estudiantes, especialmente
+            quienes requieren apoyos visuales, táctiles o atencionales.
+          </p>
+          <ul class="card-list">
+            <li>Crear fichas con pictogramas y descripciones sencillas.</li>
+            <li>Registrar feedback de estudiantes PIE sobre el modelo.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div class="section-title">
+          <h3>📊 Radar de impacto educativo</h3>
+          <p>Visualiza de forma rápida qué tan integral es tu proyecto de proteína.</p>
+        </div>
+        <span class="tag-pill">Chart.js · listo para editar</span>
+      </div>
+
+      <div class="viewer-canvas">
+        <canvas id="impactRadar" style="max-width:420px;margin:auto;"></canvas>
+        <p class="viewer-note">
+          El radar muestra cinco dimensiones: comprensión conceptual, uso de IA,
+          trabajo colaborativo, inclusión/PIE y conexión XR/VR. Puedes editar los valores
+          directamente en el script para cada nueva cohorte o curso.
+        </p>
+      </div>
+    </section>
+
+    <section id="section-docentes" class="section">
+      <div class="section-header">
+        <div class="section-title">
+          <h3>👩‍🏫 Guía docente avanzada</h3>
+          <p>Integra IA, XR e inclusión al mismo tiempo, con foco en evidencia y reflexión ética.</p>
+        </div>
+        <span class="tag-pill">Sesiones + preguntas de reflexión</span>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-label">Sesión 1</div>
+          <div>
+            <strong>Mapa de contexto.</strong> ¿Por qué importa conocer la estructura de proteínas?
+            Conectar con enfermedades, vacunas, biotecnología y cambio climático. Presentar el reto:
+            “vamos a construir una proteína que se pueda tocar, explorar en 3D y analizar con IA”.
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-label">Sesión 2–3</div>
+          <div>
+            <strong>AlphaFold/Modeller + crítica.</strong> Modelar la proteína y analizar calidad,
+            dominios y posibles mutaciones. Plantear preguntas: ¿qué pasaría si cambiamos este residuo?
+            ¿sería estable?, ¿ayudaría o dañaría a la célula?
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-label">Sesión 4</div>
+          <div>
+            <strong>IA generativa (conceptual).</strong> Revisar artículos o visualizaciones donde
+            se haya usado IA para diseñar proteínas. Cada grupo resume un caso, destacando beneficios
+            y riesgos. Registrar las conclusiones en el Lab de proyectos.
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-label">Sesión 5–6</div>
+          <div>
+            <strong>Blender + impresión 3D.</strong> Crear la malla, añadir base con Braille o relieve,
+            generar STL y preparar impresión. Documentar decisiones (escala, soportes, color de filamento).
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-label">Sesión 7–8</div>
+          <div>
+            <strong>XR y evaluación inclusiva.</strong> Probar el modelo en viewer 3D/AR/VR y con
+            estudiantes PIE. Completar fichas táctiles y rúbrica. Exportar el CSV desde el
+            Lab de proyectos para usarlo como evidencia en informes o postulaciones.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div class="section-title">
+          <h3>🥽 Capas XR · 3D / AR / VR</h3>
+          <p>Conecta este repositorio con otros viewers y experiencias inmersivas.</p>
+        </div>
+        <span class="tag-pill">Listo para Oculus / Quest · celulares</span>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card">
+          <span class="card-badge">Navegador</span>
+          <h4 class="card-title">Viewer 3D</h4>
+          <p class="card-text">
+            <code>viewer3D/proteina.html</code> carga un modelo <code>.glb</code> y permite rotarlo,
+            hacer zoom y presentar la proteína en pantalla grande. Ideal para discutir detalles finos
+            antes de imprimir.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="card-badge">Celular</span>
+          <h4 class="card-title">Viewer AR</h4>
+          <p class="card-text">
+            <code>viewerAR/proteina-ar.html</code> es una plantilla pensada para conectar con frameworks
+            AR. Puedes usarla como puente entre el modelo impreso y marcadores AR en el laboratorio.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="card-badge">Inmersivo</span>
+          <h4 class="card-title">Viewer VR</h4>
+          <p class="card-text">
+            <code>viewerVR/proteina-vr.html</code> será el punto de partida para entrar “dentro” de la
+            proteína en realidad virtual. La idea es que el estudiante experimente la escala y el
+            espacio interno de cavidades o canales.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="card-badge">Planificación</span>
+          <h4 class="card-title">Lab de proyectos</h4>
+          <p class="card-text">
+            Usa <a href="lab-proyectos.html">lab-proyectos.html</a> para registrar cada proteína,
+            herramientas usadas, avances del pipeline y acuerdos de evaluación.
+            Con un clic tendrás un CSV listo para Google Sheets.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <div class="app-footer-inner">
+      <div class="footer-left">
+        <span>🧬 Diseño computacional de proteínas · versión avanzada con IA, XR y planificación inclusiva.</span>
+        <span>Prototipo educativo, adaptable a distintos contextos y niveles.</span>
+      </div>
+      <div class="footer-links">
+        <a href="#section-docentes">Guía docente</a>
+        <a href="lab-proyectos.html">Lab de proyectos</a>
+        <a href="viewer3D/proteina.html">Viewer 3D</a>
+        <a href="viewerAR/proteina-ar.html">Viewer AR</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const canvas = document.getElementById("impactRadar");
+      if (canvas && window.Chart) {
+        const ctx = canvas.getContext("2d");
+        new Chart(ctx, {
+          type: "radar",
+          data: {
+            labels: [
+              "Comprensión conceptual",
+              "Uso de IA",
+              "Trabajo colaborativo",
+              "Inclusión / PIE",
+              "XR / VR"
+            ],
+            datasets: [{
+              label: "Proyecto actual (ejemplo)",
+              data: [4, 3, 4, 5, 3],
+              fill: true,
+              borderWidth: 1
+            }]
+          },
+          options: {
+            responsive: true,
+            scales: {
+              r: {
+                suggestedMin: 0,
+                suggestedMax: 5,
+                ticks: { stepSize: 1 }
+              }
+            },
+            plugins: {
+              legend: { display: true }
+            }
+          }
+        });
+      }
+    });
+  </script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("./sw.js").catch(() => {});
+    }
+  </script>
+</body>
+</html>

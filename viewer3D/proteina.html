@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Viewer 3D · Proteína</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+  <header class="app-header viewer-shell">
+    <div class="brand">
+      <div class="brand-logo">
+        <span>🧬</span>
+      </div>
+      <div class="brand-text">
+        <h1>Viewer 3D · Proteína</h1>
+        <p>Reemplaza el modelo de ejemplo por tu propia proteína exportada en formato .glb.</p>
+      </div>
+    </div>
+    <div class="inclusive-controls">
+      <button class="ic-btn" onclick="location.href='../index.html'">
+        <span>🏠</span> Inicio
+      </button>
+      <button class="ic-btn" data-ic="narrator">
+        <span>🗣️</span> Narrar
+      </button>
+      <button class="ic-btn" data-ic="contrast">
+        <span>🔳</span> Alto contraste
+      </button>
+    </div>
+  </header>
+
+  <main class="viewer-shell">
+    <section class="viewer-canvas">
+      <model-viewer src="../assets/models/proteina-demo.glb"
+                    camera-controls
+                    auto-rotate
+                    interaction-prompt="auto"
+                    exposure="0.85"
+                    shadow-intensity="1"
+                    style="width:100%;height:360px;border-radius:1rem;">
+      </model-viewer>
+      <p class="viewer-note">
+        Exporta desde Blender a <code>.glb</code>, copia el archivo a <code>assets/models/</code> y
+        actualiza la ruta en este viewer. Puedes crear diferentes vistas para cada proteína del curso.
+      </p>
+    </section>
+  </main>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

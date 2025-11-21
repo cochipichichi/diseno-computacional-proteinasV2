@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Viewer AR · Proteína</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="app-header viewer-shell">
+    <div class="brand">
+      <div class="brand-logo">
+        <span>📱</span>
+      </div>
+      <div class="brand-text">
+        <h1>Viewer AR · Proteína</h1>
+        <p>Plantilla para integrar AR con tu modelo de proteína.</p>
+      </div>
+    </div>
+    <div class="inclusive-controls">
+      <button class="ic-btn" onclick="location.href='../index.html'">
+        <span>🏠</span> Inicio
+      </button>
+      <button class="ic-btn" data-ic="narrator">
+        <span>🗣️</span> Narrar
+      </button>
+    </div>
+  </header>
+
+  <main class="viewer-shell">
+    <section class="viewer-canvas">
+      <p class="viewer-note">
+        Aquí puedes conectar frameworks AR (WebXR, 8thWall, Zappar, etc.). La idea es que el modelo de
+        proteína aparezca sobre un marcador o en el espacio real, complementando el objeto físico impreso.
+      </p>
+    </section>
+  </main>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
